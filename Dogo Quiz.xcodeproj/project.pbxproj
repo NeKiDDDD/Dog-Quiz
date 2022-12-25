@@ -13,6 +13,9 @@
 		A0C47CEC29571D2E00A42E0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C47CEA29571D2E00A42E0C /* Main.storyboard */; };
 		A0C47CEE29571D2F00A42E0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0C47CED29571D2F00A42E0C /* Assets.xcassets */; };
 		A0C47CF129571D2F00A42E0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A0C47CEF29571D2F00A42E0C /* LaunchScreen.storyboard */; };
+		A0C47D00295727E500A42E0C /* Property List.plist in Resources */ = {isa = PBXBuildFile; fileRef = A0C47CFF295727E500A42E0C /* Property List.plist */; };
+		A0C47D022957290500A42E0C /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C47D012957290500A42E0C /* QuestionView.swift */; };
+		A0C47D0429572E8200A42E0C /* FinalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0C47D0329572E8200A42E0C /* FinalView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +26,9 @@
 		A0C47CEB29571D2E00A42E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A0C47CED29571D2F00A42E0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A0C47CF029571D2F00A42E0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		A0C47CF229571D2F00A42E0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A0C47CFF295727E500A42E0C /* Property List.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Property List.plist"; sourceTree = "<group>"; };
+		A0C47D012957290500A42E0C /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
+		A0C47D0329572E8200A42E0C /* FinalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +61,57 @@
 		A0C47CE329571D2E00A42E0C /* Dogo Quiz */ = {
 			isa = PBXGroup;
 			children = (
-				A0C47CE429571D2E00A42E0C /* AppDelegate.swift */,
-				A0C47CE629571D2E00A42E0C /* SceneDelegate.swift */,
-				A0C47CE829571D2E00A42E0C /* ViewController.swift */,
-				A0C47CEA29571D2E00A42E0C /* Main.storyboard */,
-				A0C47CED29571D2F00A42E0C /* Assets.xcassets */,
-				A0C47CEF29571D2F00A42E0C /* LaunchScreen.storyboard */,
-				A0C47CF229571D2F00A42E0C /* Info.plist */,
+				A0C47CFC2957244600A42E0C /* Support Files */,
+				A0C47CFB2957243800A42E0C /* View Controllers */,
+				A0C47CFA2957242100A42E0C /* Resourses */,
+				A0C47CF92957241C00A42E0C /* Models */,
+				A0C47CF82957240100A42E0C /* Storyboards */,
 			);
 			path = "Dogo Quiz";
+			sourceTree = "<group>";
+		};
+		A0C47CF82957240100A42E0C /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A0C47CEA29571D2E00A42E0C /* Main.storyboard */,
+				A0C47CEF29571D2F00A42E0C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A0C47CF92957241C00A42E0C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A0C47CFA2957242100A42E0C /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				A0C47CED29571D2F00A42E0C /* Assets.xcassets */,
+			);
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		A0C47CFB2957243800A42E0C /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A0C47CE829571D2E00A42E0C /* ViewController.swift */,
+				A0C47D012957290500A42E0C /* QuestionView.swift */,
+				A0C47D0329572E8200A42E0C /* FinalView.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		A0C47CFC2957244600A42E0C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0C47CE429571D2E00A42E0C /* AppDelegate.swift */,
+				A0C47CE629571D2E00A42E0C /* SceneDelegate.swift */,
+				A0C47CFF295727E500A42E0C /* Property List.plist */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +174,7 @@
 			files = (
 				A0C47CF129571D2F00A42E0C /* LaunchScreen.storyboard in Resources */,
 				A0C47CEE29571D2F00A42E0C /* Assets.xcassets in Resources */,
+				A0C47D00295727E500A42E0C /* Property List.plist in Resources */,
 				A0C47CEC29571D2E00A42E0C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +186,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0C47D022957290500A42E0C /* QuestionView.swift in Sources */,
+				A0C47D0429572E8200A42E0C /* FinalView.swift in Sources */,
 				A0C47CE929571D2E00A42E0C /* ViewController.swift in Sources */,
 				A0C47CE529571D2E00A42E0C /* AppDelegate.swift in Sources */,
 				A0C47CE729571D2E00A42E0C /* SceneDelegate.swift in Sources */,
@@ -216,6 +266,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Dogo Quiz/Support Files/info.plist";
+				"INFOPLIST_FILE[sdk=*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -270,6 +322,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = "Dogo Quiz/Support Files/info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -289,7 +342,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8Z9CU7FVMB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Dogo Quiz/Info.plist";
+				INFOPLIST_FILE = "/Users/nikky/Desktop/Developer/Dogo Quiz/Dogo Quiz/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -317,7 +370,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 8Z9CU7FVMB;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Dogo Quiz/Info.plist";
+				INFOPLIST_FILE = "/Users/nikky/Desktop/Developer/Dogo Quiz/Dogo Quiz/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
